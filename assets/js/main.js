@@ -1,6 +1,13 @@
 (function($) {
 "use strict";
 
+ // --------------------------- Sticky Header ------------------------ //
+    (function () {
+        if ($(window).width() > 760) {
+            $(".menu-bar").sticky({topSpacing: 0});
+        }
+    }());
+
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -62,6 +69,8 @@ $("#primary-menu li").on('mouseenter mouseleave', function (e) {
 
 
 })(jQuery);
+
+
 
 
 

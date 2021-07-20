@@ -1356,3 +1356,364 @@ body.woocommerce-page .col-lg-12.col-md-12.content-area main#main {
     padding: 0.769230769em 1.5em;
     font-weight: bold;
 }
+
+
+/******* 
+	CUSTOM CSS SPACE
+*******/
+/*--Bootstrap Select--*/
+
+.bootstrap-select .btn-default.active.focus, .bootstrap-select .btn-default.active:focus, .bootstrap-select .btn-default.active:hover, 
+.bootstrap-select .btn-default.focus:active, .bootstrap-select .btn-default:active:focus, .bootstrap-select .btn-default:active:hover, 
+.bootstrap-select > .dropdown-toggle.btn-default.focus, .bootstrap-select > .dropdown-toggle.btn-default:focus, 
+.bootstrap-select > .dropdown-toggle.btn-default:hover,.btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
+    background-color: #fff;
+    border-color: #e7e8ec;
+    color: #c7c7c7;    
+    box-shadow: none;
+}
+.bootstrap-select .dropdown-toggle:focus {
+    outline: 0 none !important;
+    outline-offset: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #c7c7c7 ;    
+}
+:-moz-placeholder {
+    color: #c7c7c7;
+}
+::-moz-placeholder {
+    color: #c7c7c7;
+}
+:-ms-input-placeholder {
+    color: #c7c7c7;
+}
+
+.font-2, .font2-title1, .title-1, .title-2, .title-3, .btn-1, .btn-round, .theme-countdown {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.white-clr, .white-clr .section-title, .white-clr .title-1, .white-clr .title-2, .white-clr .title-3, .white-clr p, .white-clr a {
+    color: #fff;
+}
+.section-title, .title-1, .title-2, .title-3, .post-title, .widget-title, .font2-title1 {
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.theme-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.top-bar .list-items {
+    margin-top: 3px;
+}
+.fs-10 {
+    font-size: 10px;
+}
+.list-items {
+    margin-bottom: 0;
+    margin-left: -5px;
+}
+.list-items li {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+    text-transform: uppercase;
+}
+.top-bar .list-items li + li {
+    margin-left: 12px;
+    padding-left: 17px;
+    vertical-align: middle;
+}
+.top-bar .list-items li + li:before {
+    content: "";
+    background-color: #3e3e3e;
+    height: 10px;
+    width: 2px;
+    left: 0;
+    top: 2px;
+    position: absolute;
+}
+.white-clr, .white-clr .section-title, .white-clr .title-1, .white-clr .title-2, .white-clr .title-3, .white-clr p, .white-clr a {
+    color: #fff;
+}
+.sign-in {
+    height: 42px;
+    padding: 13px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 150px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+.small, .theme-clr-bg, .btn-1, .btn-round:hover, .btn-round:focus, .owl-nav div:hover, .owl-nav div:focus, .theme-menu > li > a::after, .header-style3 .menu-bar, .pagintn > li a:hover, .pagintn > li a:focus, .widget-wrap.tag-cloud a:hover, .widget-wrap.tag-cloud a:focus {
+    background-color: #F96B00;
+}
+a, .btn {
+    color: #222222;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.theme-clr, .hvr-clr:hover, .hvr-clr:focus, a:focus, a:hover, .theme-menu > li:hover > a::after, .theme-menu > li.active > a, .list-items li.active a, .theme-menu .dropdown-menu > li > a:hover, .theme-menu .dropdown-menu > li > a:focus {
+    color: #F96B00;
+}
+
+
+/*---------------------------------- 1.7 Theme Colors Starts -------------------------------- */
+/**-- Color-1 Light --**/
+.theme-clr, .hvr-clr:hover, .hvr-clr:focus, a:focus, a:hover, .theme-menu > li:hover > a::after, .theme-menu > li.active > a,
+.list-items li.active a,  .theme-menu .dropdown-menu > li > a:hover,   .theme-menu .dropdown-menu > li > a:focus {
+    color: #F96B00; 
+}
+.small, .theme-clr-bg, .btn-1, .btn-round:hover, .btn-round:focus, .owl-nav div:hover, .owl-nav div:focus, .theme-menu > li > a::after,
+.header-style3 .menu-bar, .pagintn > li a:hover, .pagintn > li a:focus, .widget-wrap.tag-cloud a:hover, .widget-wrap.tag-cloud a:focus {
+    background-color: #F96B00;
+}
+.clrbg-before:before, .clrbg-after:after, .social-icons li a:hover, .social-icons li a:focus,
+.pricing-box.active .btn-round {
+    background-color: #F96B00;
+}.btn-round:hover, .btn-round:focus {
+    border-color: #F96B00;
+}
+
+/*------------------------1.7 Theme Colors Ends------------------------ */
+
+
+/*--------------------------1.8 Theme Fonts Starts------------------- */
+
+
+/*------------------------- 1.8 Theme Fonts Ends --------------------- */
+
+
+/******************************* 
+    1 - GENERAL CSS ENDS 
+********************************/
+
+/******************************* 
+    2 - HEADER CSS STARTS 
+********************************/
+/*-------------------- Topbar Starts -------------------- */
+.top-bar {
+    background-image: url('../img/pattern/topbar-bg.jpg');
+    /*background: -webkit-radial-gradient(circle, #000000, #2d2c2c);*/
+    padding: 10px 0;
+    position: relative;
+}
+.top-bar .list-items {
+    margin-top: 3px;
+}
+.top-bar .list-items li + li:before {
+    content: "";
+    background-color: #3e3e3e;
+    height: 10px;
+    width: 2px;
+    left: 0;
+    top: 2px;
+    position: absolute;
+}
+.top-bar .list-items li + li {
+    margin-left: 12px;
+    padding-left: 17px;
+    vertical-align: middle;
+}
+.contact-num {
+    margin: 0 95px 0 15px;
+    text-align: right;
+}
+.boxed .contact-num {
+    margin: 0 150px 0 15px;
+}
+.sign-in {
+    height: 42px;
+    padding: 13px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 150px;
+}
+.sign-in:hover, .sign-in:focus { background-color: #ffffff; }
+
+/*-------------------- Topbar Ends -------------------- */
+
+/*-------------------- Menu Bar Starts -------------------- */
+.menu-bar {
+    background-color: #ffffff;
+    padding: 25px 0;
+    z-index: 11;
+    position: static;
+    top: 100px;
+    transition: top 0.75s ease 0s;
+    -webkit-transition: top 0.75s ease 0s;
+}
+.is-sticky .menu-bar {
+    top: 0;
+    padding: 5px 0;
+    box-shadow: 0 5px 53px -7px rgba(0, 0, 0, 0.2);
+}
+.theme-menu {
+    float: right;
+    padding-top: 10px;
+}
+.theme-menu > li {
+    padding: 5px 20px;
+    position: relative;
+}
+.theme-menu > li:last-child {
+    float: right;
+    border: 1px solid #F96B00;
+}
+.theme-menu > li > a {
+    display: inline-block;   
+    padding: 0;
+    position: relative;
+}
+.theme-menu > li > a::after {    
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;    
+    width: 100%;
+    opacity: 0;
+
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+
+    transition: all 0.4s ease-in-out;    
+    -webkit-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.theme-menu > li:hover > a::after, .theme-menu > li.active > a::after {
+    opacity: 0.4;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+.theme-menu .search {
+    margin-top: -2px;
+    border: 1px solid;
+    border-radius: 2px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 25px;
+    padding: 0;
+    text-align: center;
+    width: 30px;
+    cursor: pointer;
+}
+.theme-menu .search:hover, .theme-menu .search:focus {
+    background-color: #222222;
+    border-color: #222222;
+    color: #ffffff;
+}
+.theme-menu .dropdown-menu  li{
+    position: relative;
+}
+.theme-menu .dropdown-menu > li > a {
+    font-size: 12px;
+    font-weight: 600;
+    background-color: transparent ;
+    color: #222222;
+    padding: 5px 20px
+}
+ .navbar-toggle {
+    border: 1px solid #222222;
+    border-radius: 0;
+    padding: 9px;
+    margin: 12px 0 0;
+}
+.navbar-toggle .icon-bar {
+    background-color: #222222;
+    height: 1px;
+    width: 20px;
+}
+/*-------------------- Menu Bar Ends -------------------- */
+
+/*-------------------- Header Style-2 Starts -------------------- */
+.header-style2 .is-sticky .menu-bar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.header-style2 .navbar-toggle {
+    border: 1px solid #ffffff;
+}
+.header-style2 .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+/*-------------------- Header Style-2 Ends -------------------- */
+
+/*-------------------- Header Style-3 Starts -------------------- */
+.top-bar2 {
+    padding: 25px 0;
+}
+.top-bar2 ul {
+    display: inline-block;
+    margin: 10px 0 0;    
+    text-transform: uppercase;
+    width: 100%;
+}
+.top-bar2 .font2-title1 {
+    margin: 5px 0 0;
+}
+.top-bar2 ul li + li {
+    border-left: 1px solid #e7e8ec;
+    margin-left: 21px;
+    padding-left: 25px;
+}
+.top-bar2 .font2-light {
+    margin: 0;
+}
+.header-style3 .theme-menu {
+    float: left;
+    margin-left: -15px;
+    padding-top: 5px;
+}
+.header-style3 .menu-bar {    
+    padding: 10px 0;
+}
+.header-style3 .theme-menu .search {
+    margin-top: 0;
+}
+.header-style3 .theme-menu > li.active > a, .header-style3 .theme-menu > li > a:hover, .header-style3 .theme-menu > li > a:focus {
+    color: #222222;
+}
+.header-style3 .theme-menu > li > a::after {
+    background-color: transparent; 
+}
+.header-style3 .sign-in {    
+    border-radius: 3px;
+    position: static;
+    display: inline-block;
+    width: 100%;
+}
+.sticky-logo {
+    display: none;
+    float: left;
+    height: 40px;
+    margin-right: 35px;
+    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+}
+.is-sticky .sticky-logo {
+    display: block;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+}
+/*-------------------- Header Style-3 Ends -------------------- */
+
+/******************************* 
+    2 - HEADER CSS ENDS 
+********************************/

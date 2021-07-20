@@ -112,6 +112,52 @@ if( ! function_exists( 'logistico_header_wrap' ) ) :
                     </div>
                     <div class="col-md-6 col-sm-7 fs-12">
                         <?php
+
+                            date_default_timezone_set('Asia/Manila'); // set it to the right value
+                            function areWeOpen($day, $hour, $minutes) {
+                            $hour = (int)$hour;
+                            switch($day) {
+                                case 'Monday':
+                                    if($hour >= 9 && $hour < 17) {
+                                        return true;
+                                    }
+                                    break;
+                                case 'Tuesday':
+                                    if($hour >= 9 && $hour < 17) {
+                                        return true;
+                                    }
+                                    break;
+                                case 'Wednesday':
+                                    if($hour >= 9 && $hour < 17) {
+                                        return true;
+                                    }
+                                    break;
+                                case 'Thursday':
+                                    if($hour >= 9 && $hour < 17) {
+                                        return true;
+                                    }
+                                    break;
+                                case 'Friday':
+                                    if($hour >= 9 && $hour < 17) {
+                                        return true;
+                                    }
+                                    break;
+                                case 'Saturday':
+                                    if($hour >= 8 && $hour < 13) {
+                                        return true;
+                                    }
+                                    break;
+                                case 'Sunday':
+                                    if($hour >= 0 && $hour < 24) {
+                                        return false;
+                                    }
+                                    break;
+                            }
+                            return false;
+                            }
+
+                            $weAreOpen = areWeOpen(date('l'), date('G'), date('i'));
+
                             if($weAreOpen) {
                                 if (date('l') == 'Saturday') {
                                     $close_time = '1pm';
@@ -126,7 +172,7 @@ if( ! function_exists( 'logistico_header_wrap' ) ) :
                     </div>
                 </div>
             </div>
-            <a href="https://logistico.com/wp-admin" class="sign-in fs-12 theme-clr-bg"> sign in </a>
+            <a href="https://shenzhenaircargo.com/wp-admin" class="sign-in fs-12 theme-clr-bg"> sign in </a>
         </div>
         <!-- /.Header Topbar -->
 
@@ -141,15 +187,15 @@ if( ! function_exists( 'logistico_header_wrap' ) ) :
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-logo" href="<?= $baseurl; ?>"> <img src="assets/img/logo/logo-black.png" alt="logo" /> </a>
+                        <a class="navbar-logo" href="https://shenzhenaircargo.com"> <img src="https://shenzhenaircargo.com/wp-content/uploads/2021/07/logo.png" alt="logo" /> </a>
                     </div>
                     <div class="col-md-10 col-sm-10 fs-12">
                         <div id="navbar" class="collapse navbar-collapse no-pad">
                             <ul class="navbar-nav theme-menu">
-                                <li <?php echo ( $page_name == 'Home' || $page_parent == 'Home' ) ? 'class="active"' : ''; ?>><a href="<?= $baseurl; ?>">Home </a></li>
-                                <li <?php echo ( $page_name == 'About' || $page_parent == 'About' ) ? 'class="active"' : ''; ?>> <a href="about">about</a> </li>
-                                <li <?php echo ( $page_name == 'Track' || $page_parent == 'Track' ) ? 'class="active"' : ''; ?>> <a href="track"> track </a> </li>
-                                <li class="dropdown" <?php echo ( $page_name == 'Freights' || $page_parent == 'Freights' ) ? 'class="active"' : ''; ?>> 
+                                <li><a href="https://shenzhenaircargo.com">Home </a></li>
+                                <li> <a href="about">about</a> </li>
+                                <li> <a href="track"> track </a> </li>
+                                <li class="dropdown"> 
                                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" href="javascript:void(0)"> freights </a>
                                     <ul class="dropdown-menu">
                                         <li><a href="air-freights">air freights</a></li>
@@ -158,7 +204,7 @@ if( ! function_exists( 'logistico_header_wrap' ) ) :
                                     </ul>
 
                                 </li>
-                                <li class="dropdown" <?php echo ( $page_name == 'Services' || $page_parent == 'Services' ) ? 'class="active"' : ''; ?>> 
+                                <li class="dropdown"> 
                                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" href="javascript:void(0)"> services </a>
                                     <ul class="dropdown-menu">
                                         <li><a href="warehousing">ware housing</a></li>
@@ -167,9 +213,9 @@ if( ! function_exists( 'logistico_header_wrap' ) ) :
                                     </ul>
 
                                 </li>
-                                <li <?php echo ( $page_name == 'Contact' || $page_parent == 'Contact' ) ? 'class="active"' : ''; ?>> <a href="contact"> contact </a> </li>
+                                <li> <a href="contact"> contact </a> </li>
 
-                                <li <?php echo ( $page_name == 'Career' || $page_parent == 'Career' ) ? 'class="active"' : ''; ?>> <a href="career"> career </a> </li>
+                                <li> <a href="career"> career </a> </li>
                             </ul>                                                      
                         </div>
                     </div>
